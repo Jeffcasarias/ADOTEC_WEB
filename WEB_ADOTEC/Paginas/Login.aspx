@@ -20,9 +20,11 @@
                 <div class="m-auto w-lg-75 w-xl-50">
                     <h2 class="text-info font-weight-light mb-5" style="font-size: 25PX;color: rgba(0,0,0,0.4);filter: blur(0px);font-family: Actor, sans-serif;"><img data-bs-hover-animate="bounce" src="../Imagenes/Logo.png" width="30px" height="30px" alt="30px"/>CTP ALAJUELITA</h2>
                     <form>
-                        <div class="form-group"><label class="text-secondary">Identificación</label><input class="form-control" type="text" placeholder="Ingrese su número de cédula" style="opacity: 0.70;" required="" minlength="9" pattern="^[0-9]*$"/></div>
-                        <div class="form-group"><label class="text-secondary">Contraseña</label><input class="form-control" type="password" required="" placeholder="Ingrese su contraseña" style="opacity: 0.70;" minlength="6"></div><button class="btn btn-info bounce animated mt-2"
-                            type="submit" style="opacity: 0.85;filter: blur(0px) brightness(100%);">Ingresar</button></form>
+                        <div id="lbl_Identificacion" runat="server" class="form-group"><label class="text-secondary">Identificación</label><input class="form-control" type="text" placeholder="Ingrese su número de cédula" style="opacity: 0.70;" required="" minlength="9" pattern="^[0-9]*$"/></div>
+                        <div id="lbl_Contrasena" runat="server" class="form-group"><label class="text-secondary">Contraseña</label><input class="form-control" type="password" required="" placeholder="Ingrese su contraseña" style="opacity: 0.70;" minlength="6"></div>
+                        <Button id="btn_Ingreso" runat="server" class="btn btn-info bounce animated mt-2" type="submit" style="opacity: 0.85;filter: blur(0px) brightness(100%);">Ingresar</Button>
+
+                    </form>
                     <p class="mt-3 mb-0"><a class="text-info small" href="#">Olvidó su contraseña?</a></p>
                 </div>
             </div>
