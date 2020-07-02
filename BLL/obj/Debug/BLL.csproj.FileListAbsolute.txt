@@ -1,0 +1,7 @@
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\BLL\bin\Debug\BLL.dll.config
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\BLL\bin\Debug\BLL.dll
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\BLL\bin\Debug\BLL.pdb
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\BLL\obj\Debug\BLL.dll
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\BLL\obj\Debug\BLL.pdb

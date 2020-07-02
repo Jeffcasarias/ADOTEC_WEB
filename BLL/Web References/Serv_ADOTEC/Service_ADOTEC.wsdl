@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service_ADOTEC" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:3536/Service_ADOTEC.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:3536/Service_ADOTEC.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_ADOTEC_Metodo_Prueba_InputMessage">
+    <wsdl:part name="parameters" element="tns:Metodo_Prueba" />
+  </wsdl:message>
+  <wsdl:message name="IService_ADOTEC_Metodo_Prueba_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Metodo_PruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ADOTEC_Validar_Usuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:Validar_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="IService_ADOTEC_Validar_Usuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Validar_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ADOTEC_Recuperar_Contrasena_InputMessage">
+    <wsdl:part name="parameters" element="tns:Recuperar_Contrasena" />
+  </wsdl:message>
+  <wsdl:message name="IService_ADOTEC_Recuperar_Contrasena_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Recuperar_ContrasenaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService_ADOTEC">
+    <wsdl:operation name="Metodo_Prueba">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_ADOTEC/Metodo_Prueba" message="tns:IService_ADOTEC_Metodo_Prueba_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_ADOTEC/Metodo_PruebaResponse" message="tns:IService_ADOTEC_Metodo_Prueba_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Validar_Usuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_ADOTEC/Validar_Usuario" message="tns:IService_ADOTEC_Validar_Usuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_ADOTEC/Validar_UsuarioResponse" message="tns:IService_ADOTEC_Validar_Usuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Recuperar_Contrasena">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_ADOTEC/Recuperar_Contrasena" message="tns:IService_ADOTEC_Recuperar_Contrasena_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_ADOTEC/Recuperar_ContrasenaResponse" message="tns:IService_ADOTEC_Recuperar_Contrasena_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService_ADOTEC" type="tns:IService_ADOTEC">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Metodo_Prueba">
+      <soap:operation soapAction="http://tempuri.org/IService_ADOTEC/Metodo_Prueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Validar_Usuario">
+      <soap:operation soapAction="http://tempuri.org/IService_ADOTEC/Validar_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Recuperar_Contrasena">
+      <soap:operation soapAction="http://tempuri.org/IService_ADOTEC/Recuperar_Contrasena" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service_ADOTEC">
+    <wsdl:port name="BasicHttpBinding_IService_ADOTEC" binding="tns:BasicHttpBinding_IService_ADOTEC">
+      <soap:address location="http://localhost:3536/Service_ADOTEC.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
