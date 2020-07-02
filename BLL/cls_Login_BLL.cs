@@ -13,8 +13,9 @@ namespace BLL
 
         public string ValidarUsuario(/*string Usuario, string Contrasena*/)
         {
-
-            return obj_servADOTEC.Metodo_Prueba("Prueba WEB");
+            string respuesta;
+            respuesta = obj_servADOTEC.Metodo_Prueba("Prueba WEB");
+            return respuesta;
         }
         
     }

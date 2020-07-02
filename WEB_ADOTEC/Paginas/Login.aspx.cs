@@ -22,6 +22,9 @@ namespace WEB_ADOTEC.Paginas
             
         }
 
-       
+        protected void btn_Ingreso_Click(object sender, EventArgs e)
+        {
+            obj_Login.ValidarUsuario();
+        }
     }
 }

@@ -39,6 +39,6 @@ namespace WEB_ADOTEC.Paginas
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton btn_Ingreso;
+        protected global::System.Web.UI.WebControls.Button btn_Ingreso;
     }
 }
