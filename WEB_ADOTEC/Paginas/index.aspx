@@ -1,22 +1,64 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WEB_ADOTEC.Paginas.index" %>
 
 <!DOCTYPE html>
+<html>
+<head>
+	<title>Página web en mantenimiento</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Ejemplo práctico de aplicación del posicionamiento fijo"/>
+	<meta name="author" content="francesc ricart"/>
+	<style>
+		/*TIPOGRAFÍAS*/
+		@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+		/*INICIALIZACIÓN DE ESTILOS*/
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-    <title>LoginCTP</title>
-    <link href="../Booststrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor"/>
-    <link href="../Hoja_estilos/-Login-form-Page-BS4-.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
-    <link href="../Hoja_estilos/styles.css" rel="stylesheet" />
+		body{background-color:#f6f6f6;}
+
+		/*PERSONALIZACIÓN DE P.MANTENIMIENTO*/
+		.mantenimiento{
+			width:600px;
+			height:400px;
+			padding:32px;
+			border:1px solid #000;
+			border-radius:10px;
+			margin-top:-200px;
+			margin-left:-300px;
+			background-color:#fff;
+			position:fixed;
+			top:50%;
+			left:50%;
+		}
+		.mantenimiento h1, .mantenimiento h2, .mantenimiento p{
+			font-family:"noto sans", sans-serif;
+		}
+
+		.mantenimiento h1{
+			font-size:3em;
+			text-align:center;
+			padding:16px;
+		}
+		.mantenimiento h2{
+			font-size:2em;
+			font-style:italic;
+		}
+		.mantenimiento p{
+			margin:16px 0;
+			line-height:1.5em;
+		}
+
+	</style>
 </head>
 <body>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    
+	<div class="mantenimiento" id="<">
+		<h1>Página web en construcción</h1>
+		<p>Proximamente se mostrará un menú</p>
+	</div>
+
+    <script src="../Scripts/DestroySession.js"></script>
 </body>
 </html>

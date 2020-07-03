@@ -14,6 +14,7 @@ namespace WEB_ADOTEC.Paginas
         #region VARIABLES GLOBALES
 
         cls_Login_BLL obj_Login = new cls_Login_BLL();
+        string Respuesta = string.Empty;
 
         #endregion
 
@@ -24,7 +25,11 @@ namespace WEB_ADOTEC.Paginas
 
         protected void btn_Ingreso_Click(object sender, EventArgs e)
         {
-            obj_Login.ValidarUsuario();
+            Respuesta = obj_Login.ValidarUsuario(txtUsuario.Text, txtContrasena.Text);
+            if (Respuesta != null)
+            {
+                Response.Redirect("index.aspx");
+            }
         }
     }
 }

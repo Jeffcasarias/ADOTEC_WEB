@@ -77,6 +77,7 @@
     <Content Include="Paginas\index.aspx" />
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Scripts\bs-init.js" />
+    <Content Include="Scripts\DestroySession.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
