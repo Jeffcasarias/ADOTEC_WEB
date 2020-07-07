@@ -28,14 +28,14 @@
                         <div  class="form-group">
                             <asp:label runat="server" class="text-secondary" Text="Contraseña"/>
                             <asp:textbox runat="server" id="txtContrasena" class="form-control" type="password" required="" placeholder="Ingrese su contraseña" style="opacity: 0.70;" minlength="6"/>
-
+                            <asp:Label ID="lbl_Respuesta" runat="server" Text="" ForeColor="Red"/>
                         </div>
                         <asp:Button id="btn_Ingreso" runat="server" OnClick="btn_Ingreso_Click" class="btn btn-info bounce animated mt-2" type="submit" style="opacity: 0.85;filter: blur(0px) brightness(100%);" Text="Ingresar"/>
 
                     </form>
                     <p class="mt-3 mb-0"><a class="text-info small" href="#">Olvidó su contraseña?</a></p>
                 </div>
-            </div>
+            </div>            
             <div class="col-lg-6 d-flex align-items-end" id="bg-block" style="background-image: url(../Imagenes/default.jpg);background-size: cover;background-position: center center;filter: blur(1px);background-color: #926c6c;">
                 <p class="ml-auto small text-dark mb-2"><em>&nbsp;</em><a class="text-dark" href="https://unsplash.com/photos/v0zVmWULYTg?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank"></a><br/></p>
             </div>
