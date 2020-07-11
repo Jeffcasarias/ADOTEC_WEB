@@ -26,9 +26,14 @@ namespace WEB_ADOTEC.Paginas
         protected void btn_Ingreso_Click(object sender, EventArgs e)
         {
             Respuesta = obj_Login.ValidarUsuario(txtUsuario.Text, txtContrasena.Text);
-            if (Respuesta != null)
+            if (Respuesta == null)
             {
+                lbl_Respuesta.Text = string.Empty;
                 Response.Redirect("index.aspx");
+            }
+            else
+            {
+                lbl_Respuesta.Text = Respuesta;
             }
         }
     }
