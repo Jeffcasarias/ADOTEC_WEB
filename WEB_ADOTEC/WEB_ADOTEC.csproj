@@ -70,11 +70,24 @@
     <Content Include="Bootstrap\css\bootstrap.min.css" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Hoja_estilos\-Login-form-Page-BS4-.css" />
+    <Content Include="Hoja_estilos\Navigation-Clean.css" />
+    <Content Include="Hoja_estilos\Projects-Clean.css" />
     <Content Include="Hoja_estilos\styles.css" />
+    <Content Include="Imagenes\AdminLogisYDistri.PNG" />
+    <Content Include="Imagenes\building.jpg" />
     <Content Include="Imagenes\Colegio.jpg" />
+    <Content Include="Imagenes\Contabilidad.PNG" />
     <Content Include="Imagenes\default.jpg" />
+    <Content Include="Imagenes\desk.jpg" />
+    <Content Include="Imagenes\ejeCentroServicios.PNG" />
+    <Content Include="Imagenes\ElectroIndustrial.PNG" />
+    <Content Include="Imagenes\InformaticaEm.PNG" />
+    <Content Include="Imagenes\loft.jpg" />
     <Content Include="Imagenes\Logo.png" />
-    <Content Include="Paginas\index.aspx" />
+    <Content Include="Imagenes\minibus.jpeg" />
+    <Content Include="Imagenes\ProducCalidad.PNG" />
+    <Content Include="Imagenes\Redes.PNG" />
+    <Content Include="Paginas\Index.html" />
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Scripts\bs-init.js" />
     <Content Include="Scripts\DestroySession.js" />
@@ -82,13 +95,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Paginas\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Paginas\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
