@@ -71,6 +71,7 @@
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Hoja_estilos\-Login-form-Page-BS4-.css" />
     <Content Include="Hoja_estilos\Navigation-Clean.css" />
+    <Content Include="Hoja_estilos\Navigation-with-Button.css" />
     <Content Include="Hoja_estilos\Projects-Clean.css" />
     <Content Include="Hoja_estilos\styles.css" />
     <Content Include="Imagenes\AdminLogisYDistri.PNG" />
@@ -89,6 +90,7 @@
     <Content Include="Imagenes\Redes.PNG" />
     <Content Include="Paginas\Index.html" />
     <Content Include="Paginas\Login.aspx" />
+    <Content Include="Paginas\testVocacional.aspx" />
     <Content Include="Scripts\bs-init.js" />
     <Content Include="Scripts\DestroySession.js" />
     <Content Include="Scripts\jquery.min.js" />
@@ -101,6 +103,13 @@
     </Compile>
     <Compile Include="Paginas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\testVocacional.aspx.cs">
+      <DependentUpon>testVocacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\testVocacional.aspx.designer.cs">
+      <DependentUpon>testVocacional.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
