@@ -29,7 +29,7 @@ namespace WEB_ADOTEC.Paginas
             if (Respuesta == null)
             {
                 lbl_Respuesta.Text = string.Empty;
-                Response.Redirect("index.aspx");
+                Response.Redirect("testVocacional.aspx");
             }
             else
             {

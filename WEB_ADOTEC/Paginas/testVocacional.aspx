@@ -35,14 +35,17 @@
            
         </div>
     </nav>
+
     <h2 class="text-center">Feria Vocacional Virtual</h2>
+<div class="text-left">
     <p class="text-uppercase text-center text-black-50">Test para reconocer los intereses vocacionales de una especialidad técnica</p>
-    <p class="text-center">Instrucciones:<br><br>1. Lea cuidadosamente cada una de las actividades que se le presentan.<br><br>2.Dele clic a cada opción, esta se abrirá y desplegará las opciones<br><br>3. Marque la columna de "Si" o "No" según su interés por esa actividad.<br><br>4.
+    <p class="text-left"> Instrucciones:<br><br> 1. Lea cuidadosamente cada una de las actividades que se le presentan.<br><br> 2.Dele clic a cada opción, esta se abrirá y desplegará las opciones<br><br> 3. Marque la columna de "Si" o "No" según su interés por esa actividad.<br><br> 4.
         No hay respuestas buenas ni malas, lo importante es su sinceridad a la hora de responder. <br><br></p>
+</div>
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 text-left">
                     <div role="tablist" id="accordion-1">
                         <div class="card">
                             <div class="card-header" role="tab">
@@ -367,6 +370,7 @@
         <p class="text-capitalize text-center">Administración logística y distribución&nbsp;<input type="text" style="width: 50px;height: 25px;">&nbsp;&nbsp;<br>Contabilidad y Costos&nbsp;<input type="text" style="width: 50px;height: 25px;"><br>Informática Empresarial&nbsp;<input type="text"
                 style="width: 50px;height: 25px;"><br>Productividad y Calidad&nbsp;<input type="text" style="width: 50px;height: 25px;"><br>Ejecutivo para Centros de Servicios&nbsp;<input type="text" style="width: 50px;height: 25px;"><br><br> <asp:Button ID="btnEnviar" runat="server" Text="Enviar" class="btn btn-primary" />
     </div>
+        <script src="../Scripts/DestroySession.js"></script>
     <script src="../Scripts/jquery.min.js"></script>
     <script src="../Bootstrap/js/bootstrap.min.js"></script>
     <script src="../Scripts/bs-init.js"></script>
