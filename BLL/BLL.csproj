@@ -50,6 +50,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Test\cls_ValidarTestAptitud_BLL.cs" />
     <Compile Include="Web References\Serv_ADOTEC\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -90,6 +91,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\Serv_ADOTEC\Service_ADOTEC0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Serv_ADOTEC\Service_ADOTEC1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

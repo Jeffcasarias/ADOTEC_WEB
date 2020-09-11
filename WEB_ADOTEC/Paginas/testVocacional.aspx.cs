@@ -6,12 +6,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using DAL;
+using BLL.Test;
 
 namespace WEB_ADOTEC.Paginas
 {
     public partial class testVocacional : System.Web.UI.Page
     {
         cls_TestVocacional_DAL obj_test = new cls_TestVocacional_DAL();
+        cls_ValidarTestAptitud_BLL obj_validaraptitud = new cls_ValidarTestAptitud_BLL();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -336,6 +338,8 @@ namespace WEB_ADOTEC.Paginas
             {
                 obj_test.lstRespuestas[35] = "No";
             }
+
+            obj_validaraptitud.ValidacionRespuestas(obj_test.lstRespuestas);
         }
     }
 }
