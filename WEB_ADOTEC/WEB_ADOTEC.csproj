@@ -90,6 +90,7 @@
     <Content Include="Imagenes\Redes.PNG" />
     <Content Include="Paginas\Index.html" />
     <Content Include="Paginas\Login.aspx" />
+    <Content Include="Paginas\RevisarTestAptitud.aspx" />
     <Content Include="Paginas\testVocacional.aspx" />
     <Content Include="Scripts\bs-init.js" />
     <Content Include="Scripts\DestroySession.js" />
@@ -103,6 +104,13 @@
     </Compile>
     <Compile Include="Paginas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RevisarTestAptitud.aspx.cs">
+      <DependentUpon>RevisarTestAptitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RevisarTestAptitud.aspx.designer.cs">
+      <DependentUpon>RevisarTestAptitud.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\testVocacional.aspx.cs">
       <DependentUpon>testVocacional.aspx</DependentUpon>
