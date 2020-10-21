@@ -4,22 +4,22 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <title>LoginCTP</title>
-    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
-    <link rel="stylesheet" href="../Hoja_estilos/-Login-form-Page-BS4-.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../Hoja_estilos/Navigation-Clean.css">
-    <link rel="stylesheet" href="../Hoja_estilos/Navigation-with-Button.css">
-    <link rel="stylesheet" href="../Hoja_estilos/Projects-Clean.css">
-    <link rel="stylesheet" href="../Hoja_estilos/styles.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor"/>
+    <link rel="stylesheet" href="../Hoja_estilos/-Login-form-Page-BS4-.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="../Hoja_estilos/Navigation-Clean.css"/>
+    <link rel="stylesheet" href="../Hoja_estilos/Navigation-with-Button.css"/>
+    <link rel="stylesheet" href="../Hoja_estilos/Projects-Clean.css"/>
+    <link rel="stylesheet" href="../Hoja_estilos/styles.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
-       <nav nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(156,156,156);">
-        <div class="container"><img src="../Imagenes/Logo.png" style="width: 50px;"><a class="navbar-brand" href="#" style="font-size: 18px;color: #f3f8f6;opacity: 0.69;""><br><strong>CTP ALAJUELITA</strong><br><br></a><button data-toggle="collapse" class="navbar-toggler"
+       <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(156,156,156);">
+        <div class="container"><img src="../Imagenes/Logo.png" style="width: 50px;"/><a class="navbar-brand" href="#" style="font-size: 18px;color: #f3f8f6;opacity: 0.69;""><br/><strong>CTP ALAJUELITA</strong><br/><br/></a><button data-toggle="collapse" class="navbar-toggler"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -41,17 +41,17 @@
         ni malas, lo importante es su sinceridad a la hora de responder. <br><br></p>
     <div class="col">
         <p style="font-family: Alike, serif;filter: brightness(32%);border-style: none;margin-bottom: 5px;margin-top: 5px;">1. Brindar, excelencia en el servicio al cliente, apoyando el proceso empresarial e identificándose con la misión y visión de la empresa donde labora?</p>
-        <div class="form-check"><input class="form-check-input" id="respuestaSi1" name="respuesta1" type="radio" runat="server"><label class="form-check-label" for="formCheck-1" style="font-family: Alike, serif;">Si</label></div>
-        <div class="form-check"><input class="form-check-input" id="respuestaNo1" name="respuesta1" type="radio" runat="server"><label class="form-check-label" for="formCheck-2" style="font-family: Alike, serif;">No</label></div>
+        <div class="form-check"><input class="form-check-input" id="respuestaSi1" name="respuesta1" type="radio" runat="server"/><label class="form-check-label" for="formCheck-1" style="font-family: Alike, serif;">Si</label></div>
+        <div class="form-check"><input class="form-check-input" id="respuestaNo1" name="respuesta1" type="radio" runat="server"/><label class="form-check-label" for="formCheck-2" style="font-family: Alike, serif;">No</label></div>
         <p style="font-family: Alike, serif;filter: brightness(32%);margin-top: 5px;margin-bottom: 5px;">2. Diseñar&nbsp; páginas para la publicación de información en Internet &nbsp;utilizando un editor?<br></p>
-        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaSi2" name="respuesta2" runat="server" ><label class="form-check-label" for="formCheck-3" style="font-family: Alike, serif;">Si</label></div>
-        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaNo2" name="respuesta2" runat="server" ><label class="form-check-label" for="formCheck-4" style="font-family: Alike, serif;">No</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaSi2" name="respuesta2" runat="server" /><label class="form-check-label" for="formCheck-3" style="font-family: Alike, serif;">Si</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaNo2" name="respuesta2" runat="server" /><label class="form-check-label" for="formCheck-4" style="font-family: Alike, serif;">No</label></div>
         <p style="font-family: Alike, serif;filter: brightness(32%);margin-top: 5px;margin-bottom: 5px;">3.&nbsp;Usar las herramientas disponibles en el software de aplicación para el desarrollo de su trabajo?<br></p>
-        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaSi3" name="respuesta3" runat="server"><label class="form-check-label" for="formCheck-5" style="font-family: Alike, serif;">Si</label></div>
-        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaNo3" name="respuesta3" runat="server"><label class="form-check-label" for="formCheck-6" style="font-family: Alike, serif;">No</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaSi3" name="respuesta3" runat="server"/><label class="form-check-label" for="formCheck-5" style="font-family: Alike, serif;">Si</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaNo3" name="respuesta3" runat="server"/><label class="form-check-label" for="formCheck-6" style="font-family: Alike, serif;">No</label></div>
         <p style="font-family: Alike, serif;filter: brightness(32%);margin-top: 5px;margin-bottom: 5px;">4. Desarrollar procesos relacionados con la productividad y la competitividad?<br></p>
-        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaSi4" name="respuesta4" runat="server"><label class="form-check-label" for="formCheck-7" style="font-family: Alike, serif;">Si</label></div>
-        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaNo4" name="respuesta4" runat="server"><label class="form-check-label" for="formCheck-8" style="font-family: Alike, serif;">No</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaSi4" name="respuesta4" runat="server"/><label class="form-check-label" for="formCheck-7" style="font-family: Alike, serif;">Si</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" id="respuestaNo4" name="respuesta4" runat="server"/><label class="form-check-label" for="formCheck-8" style="font-family: Alike, serif;">No</label></div>
         <p style="font-family: Alike, serif;filter: brightness(32%);margin-top: 5px;margin-bottom: 5px;">5. Diseñar cuadros y gráficos estadísticos que le den información para tomar decisiones?<br></p>
         <div class="form-check"><input class="form-check-input" type="radio" id="respuestaSi5" name="respuesta5" runat="server"><label class="form-check-label" for="formCheck-9" style="font-family: Alike, serif;">Si</label></div>
         <div class="form-check"><input class="form-check-input" type="radio" id="respuestaNo5" name="respuesta5" runat="server"><label class="form-check-label" for="formCheck-10" style="font-family: Alike, serif;">No</label></div>
@@ -150,7 +150,7 @@
         <p class="text-left" style="margin-top: 0px;"><br><strong>De acuerdo con las&nbsp;especialidades que ofrece el CTP- Alajuelita enumérelas en orden de prioridad&nbsp;(1,2, 3), siendo 1 la especialidad de su mayor interés. </strong><br><br></p>
         <p class="text-capitalize text-left" style="font-family: Alike, serif;">Administración logística y distribución&nbsp;<input id="txtAdministracionLogistica" type="text" runat="server" style="width: 50px;height: 25px;">&nbsp;&nbsp;<br>Contabilidad y Costos&nbsp;<input id="txtContabilidad" runat="server" type="text" style="width: 50px;height: 25px;"><br>Informática Empresarial&nbsp;
             <input runat="server" id="txtInformatica" type="text" style="width: 50px;height: 25px;"><br>Productividad y Calidad&nbsp;<input runat="server" id="txtProductividad" type="text" style="width: 50px;height: 25px;"><br>Ejecutivo para Centros de Servicios&nbsp;<input runat="server" id="txtCentroServicios" type="text" style="width: 50px;height: 25px;"><br>
-            <br><asp:Button ID="btnEnviar" runat="server" Text="Enviar" class="btn btn-primary" />
+            <br><asp:Button ID="btnEnviar" runat="server" Text="Enviar" class="btn btn-primary" OnClick="btnEnviar_Click" />
     </div>
     <script src="../Scripts/jquery.min.js"></script>
     <script src="../Bootstrap/js/bootstrap.min.js"></script>

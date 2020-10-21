@@ -9,7 +9,7 @@ namespace BLL
 {
     public class cls_Login_BLL
     {
-        Serv_ADOTEC.Service_ADOTEC obj_servADOTEC = new Serv_ADOTEC.Service_ADOTEC();
+        Service_ADOTEC obj_servADOTEC = new Service_ADOTEC();
 
         public string ValidarUsuario(string Usuario, string Contrasena)
         {
