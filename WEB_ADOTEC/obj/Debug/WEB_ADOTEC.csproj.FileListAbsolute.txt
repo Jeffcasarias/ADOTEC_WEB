@@ -124,3 +124,5 @@ C:\Users\eric1\Source\Repos\ADOTEC_WEB\WEB_ADOTEC\obj\Debug\WEB_ADOTEC.dll
 C:\Users\eric1\Source\Repos\ADOTEC_WEB\WEB_ADOTEC\obj\Debug\WEB_ADOTEC.pdb
 C:\Users\usuario\Source\Repos\ADOTEC_WEB\WEB_ADOTEC\bin\DAL.dll
 C:\Users\usuario\Source\Repos\ADOTEC_WEB\WEB_ADOTEC\bin\DAL.pdb
+C:\Users\eric1\Source\Repos\ADOTEC_WEB\WEB_ADOTEC\bin\DAL.dll
+C:\Users\eric1\Source\Repos\ADOTEC_WEB\WEB_ADOTEC\bin\DAL.pdb

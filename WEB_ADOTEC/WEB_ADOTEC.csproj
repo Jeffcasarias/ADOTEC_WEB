@@ -69,9 +69,15 @@
   <ItemGroup>
     <Content Include="Bootstrap\css\bootstrap.min.css" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="fonts\ionicons.min.css" />
+    <Content Include="fonts\ionicons.svg" />
     <Content Include="Hoja_estilos\-Login-form-Page-BS4-.css" />
+    <Content Include="Hoja_estilos\Article-Clean.css" />
+    <Content Include="Hoja_estilos\Competences-Grid---3-Columns---Hover-Effect-Float-Up.css" />
+    <Content Include="Hoja_estilos\Footer-Basic.css" />
     <Content Include="Hoja_estilos\Navigation-Clean.css" />
     <Content Include="Hoja_estilos\Navigation-with-Button.css" />
+    <Content Include="Hoja_estilos\Navigation-with-Search.css" />
     <Content Include="Hoja_estilos\Projects-Clean.css" />
     <Content Include="Hoja_estilos\styles.css" />
     <Content Include="Imagenes\AdminLogisYDistri.PNG" />
@@ -90,7 +96,8 @@
     <Content Include="Imagenes\Redes.PNG" />
     <Content Include="Paginas\Index.html" />
     <Content Include="Paginas\Login.aspx" />
-    <Content Include="Paginas\RevisarTestAptitud.aspx" />
+    <Content Include="Paginas\RevisarAptitud.aspx" />
+    <Content Include="Paginas\RevisarTestVocacional.aspx" />
     <Content Include="Paginas\testVocacional.aspx" />
     <Content Include="Scripts\bs-init.js" />
     <Content Include="Scripts\DestroySession.js" />
@@ -105,12 +112,19 @@
     <Compile Include="Paginas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\RevisarTestAptitud.aspx.cs">
-      <DependentUpon>RevisarTestAptitud.aspx</DependentUpon>
+    <Compile Include="Paginas\RevisarAptitud.aspx.cs">
+      <DependentUpon>RevisarAptitud.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\RevisarTestAptitud.aspx.designer.cs">
-      <DependentUpon>RevisarTestAptitud.aspx</DependentUpon>
+    <Compile Include="Paginas\RevisarAptitud.aspx.designer.cs">
+      <DependentUpon>RevisarAptitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RevisarTestVocacional.aspx.cs">
+      <DependentUpon>RevisarTestVocacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RevisarTestVocacional.aspx.designer.cs">
+      <DependentUpon>RevisarTestVocacional.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\testVocacional.aspx.cs">
       <DependentUpon>testVocacional.aspx</DependentUpon>
@@ -122,6 +136,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\ionicons.eot" />
+    <Content Include="fonts\ionicons.ttf" />
+    <Content Include="fonts\ionicons.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

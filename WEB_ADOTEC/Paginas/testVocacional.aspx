@@ -148,10 +148,15 @@
     </div>
     <div class="text-left">
         <p class="text-left" style="margin-top: 0px;"><br><strong>De acuerdo con las&nbsp;especialidades que ofrece el CTP- Alajuelita enumérelas en orden de prioridad&nbsp;(1,2, 3), siendo 1 la especialidad de su mayor interés. </strong><br><br></p>
-        <p class="text-capitalize text-left" style="font-family: Alike, serif;">Administración logística y distribución&nbsp;<input id="txtAdministracionLogistica" type="text" runat="server" style="width: 50px;height: 25px;">&nbsp;&nbsp;<br>Contabilidad y Costos&nbsp;<input id="txtContabilidad" runat="server" type="text" style="width: 50px;height: 25px;"><br>Informática Empresarial&nbsp;
-            <input runat="server" id="txtInformatica" type="text" style="width: 50px;height: 25px;"><br>Productividad y Calidad&nbsp;<input runat="server" id="txtProductividad" type="text" style="width: 50px;height: 25px;"><br>Ejecutivo para Centros de Servicios&nbsp;<input runat="server" id="txtCentroServicios" type="text" style="width: 50px;height: 25px;"><br>
+        <p class="text-capitalize text-left" style="font-family: Alike, serif;">Administración logística y distribución&nbsp;<input id="txtAdministracionLogistica" type="text" runat="server" style="width: 50px;height: 25px;">&nbsp;&nbsp;<br>Contabilidad y Costos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="txtContabilidad" runat="server" type="text" style="width: 50px;height: 25px;"><br>Informática Empresarial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input runat="server" id="txtInformatica" type="text" style="width: 50px;height: 25px;"><br>Productividad y Calidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input runat="server" id="txtProductividad" type="text" style="width: 50px;height: 25px;"><br>Ejecutivo para Centros de Servicios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<input runat="server" id="txtCentroServicios" type="text" style="width: 50px;height: 25px;"><br>
             <br><asp:Button ID="btnEnviar" runat="server" Text="Enviar" class="btn btn-primary" OnClick="btnEnviar_Click" />
     </div>
+        <div class="footer-basic">
+        <footer>
+           
+            <p class="Colegio Técnico Profesional Alajuelita © 2020"</p>
+        </footer>
     <script src="../Scripts/jquery.min.js"></script>
     <script src="../Bootstrap/js/bootstrap.min.js"></script>
     <script src="../Scripts/bs-init.js"></script>
