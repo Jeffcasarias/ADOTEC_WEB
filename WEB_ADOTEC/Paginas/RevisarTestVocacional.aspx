@@ -35,11 +35,11 @@
     <div style="text-align: center;">
         <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Revisión por estudiante</label></div>
     </div>
-    <div style="text-align: center;"><label>Ingrese la cédula del estudiante:&nbsp;</label><input type="text"><button class="btn btn-primary" type="button" style="font-size: 13.5px;margin-bottom: 10px;font-family: Adamina, serif;border-radius: 20px;background: rgb(177,184,191);border-style: none;margin-left: 10px;">Buscar</button></div>
-    <div><label style="margin-top: 10px;margin-left: 20px;">Nombre Apellido1 Apellido2</label>
+    <div style="text-align: center;"><label>Ingrese la cédula del estudiante:&nbsp;</label><asp:textbox id="txt_IdEstudiante" runat="server" type="text"/><asp:button id="btn_FiltrarEstudiante" runat="server" class="btn btn-primary" type="button" style="font-size: 13.5px;margin-bottom: 10px;font-family: Adamina, serif;border-radius: 20px;background: rgb(177,184,191);border-style: none;margin-left: 10px;" Text="Buscar" OnClick="btn_FiltrarEstudiante_Click"></asp:button></div>
+    <div><asp:label id="lbl_NombreEstudiante" runat="server" style="margin-top: 10px;margin-left: 20px;"> </asp:label>
         <div class="text-center">
-            <div class="table-responsive table-borderless" style="margin-top: 30px;margin-left: 10px;margin-right: 10px;opacity: 1;filter: blur(0px);">
-                <table class="table table-striped table-bordered">
+            <div class="table-responsive table-borderless" style="margin-top: 30px;margin-left: 10px;margin-right: 10px;opacity: 1;filter: blur(0px);" runat="server">
+                <table id="tblEspecialdes" class="table table-striped table-bordered" runat="server">
                     <thead>
                         <tr>
                             <th>Especialidad</th>
@@ -50,38 +50,38 @@
                     <tbody>
                         <tr>
                             <td>Informática Empresarial</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td id="tbl_N_Infor_Empr" runat="server">-</td>
+                            <td id="tbl_E_Infor_Empr" runat="server">-</td>
                         </tr>
                         <tr>
                             <td>Informática en Redes</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td id="tbl_N_Infor_Red" runat="server">-</td>
+                            <td id="tbl_E_Infor_Red" runat="server">-</td>
                         </tr>
                         <tr>
                             <td>Contabilidad y Costos</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td id="tbl_N_ContCost" runat="server">-</td>
+                            <td id="tbl_E_ContCost" runat="server">-</td>
                         </tr>
                         <tr>
                             <td>Ejecutivo para Centro de Servicios</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td id="tbl_N_EjecCentServ" runat="server">-</td>
+                            <td id="tbl_E_EjecCentServ" runat="server">-</td>
                         </tr>
                         <tr>
                             <td>Electrónica Industrial</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td id="tbl_N_ElecIndust" runat="server">-</td>
+                            <td id="tbl_E_ElecIndust" runat="server">-</td>
                         </tr>
                         <tr>
                             <td>Administración, Logística y Distribución</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td id="tbl_N_AdminLogDist" runat="server">-</td>
+                            <td id="tbl_E_AdminLogDist" runat="server">-</td>
                         </tr>
                         <tr>
                             <td>Productividad y Calidad</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td id="tbl_N_ProdCal" runat="server">-</td>
+                            <td id="tbl_E_ProdCal" runat="server">-</td>
                         </tr>
                     </tbody>
                 </table>

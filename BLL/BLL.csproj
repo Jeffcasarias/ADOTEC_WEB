@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\cls_Admin_BLL.cs" />
     <Compile Include="cls_Login_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -94,6 +95,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\Serv_ADOTEC\Service_ADOTEC1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Serv_ADOTEC\Service_ADOTEC2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

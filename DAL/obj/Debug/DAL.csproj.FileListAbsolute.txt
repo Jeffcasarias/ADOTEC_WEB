@@ -9,3 +9,4 @@ C:\Users\eric1\Source\Repos\ADOTEC_WEB\DAL\obj\Debug\DAL.csprojAssemblyReference
 C:\Users\eric1\Source\Repos\ADOTEC_WEB\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\eric1\Source\Repos\ADOTEC_WEB\DAL\obj\Debug\DAL.dll
 C:\Users\eric1\Source\Repos\ADOTEC_WEB\DAL\obj\Debug\DAL.pdb
+C:\Users\usuario\Source\Repos\ADOTEC_WEB\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

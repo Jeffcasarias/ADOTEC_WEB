@@ -20,6 +20,7 @@ namespace BLL.Serv_ADOTEC {
     using System.Web.Services.Protocols;
     using System.Xml.Serialization;
     using System.ComponentModel;
+    using System.Data;
     
     
     /// <remarks/>
@@ -38,6 +39,8 @@ namespace BLL.Serv_ADOTEC {
         private System.Threading.SendOrPostCallback GeneraExcelOperationCompleted;
         
         private System.Threading.SendOrPostCallback RespuestasTestOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback Filtrar_EstudianteOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -91,6 +94,9 @@ namespace BLL.Serv_ADOTEC {
         
         /// <remarks/>
         public event RespuestasTestCompletedEventHandler RespuestasTestCompleted;
+        
+        /// <remarks/>
+        public event Filtrar_EstudianteCompletedEventHandler Filtrar_EstudianteCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/Metodo_Prueba", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -241,6 +247,38 @@ namespace BLL.Serv_ADOTEC {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/Filtrar_Estudiante", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Data.DataTable Filtrar_Estudiante(int iIdEstudiante, [System.Xml.Serialization.XmlIgnoreAttribute()] bool iIdEstudianteSpecified) {
+            object[] results = this.Invoke("Filtrar_Estudiante", new object[] {
+                        iIdEstudiante,
+                        iIdEstudianteSpecified});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Filtrar_EstudianteAsync(int iIdEstudiante, bool iIdEstudianteSpecified) {
+            this.Filtrar_EstudianteAsync(iIdEstudiante, iIdEstudianteSpecified, null);
+        }
+        
+        /// <remarks/>
+        public void Filtrar_EstudianteAsync(int iIdEstudiante, bool iIdEstudianteSpecified, object userState) {
+            if ((this.Filtrar_EstudianteOperationCompleted == null)) {
+                this.Filtrar_EstudianteOperationCompleted = new System.Threading.SendOrPostCallback(this.OnFiltrar_EstudianteOperationCompleted);
+            }
+            this.InvokeAsync("Filtrar_Estudiante", new object[] {
+                        iIdEstudiante,
+                        iIdEstudianteSpecified}, this.Filtrar_EstudianteOperationCompleted, userState);
+        }
+        
+        private void OnFiltrar_EstudianteOperationCompleted(object arg) {
+            if ((this.Filtrar_EstudianteCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Filtrar_EstudianteCompleted(this, new Filtrar_EstudianteCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -344,6 +382,32 @@ namespace BLL.Serv_ADOTEC {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
     public delegate void RespuestasTestCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void Filtrar_EstudianteCompletedEventHandler(object sender, Filtrar_EstudianteCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Filtrar_EstudianteCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Filtrar_EstudianteCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
 }
 
 #pragma warning restore 1591

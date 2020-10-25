@@ -14,15 +14,19 @@ namespace WEB_ADOTEC.Paginas
     {
         cls_TestVocacional_DAL obj_test = new cls_TestVocacional_DAL();
         cls_ValidarTestAptitud_BLL obj_validaraptitud = new cls_ValidarTestAptitud_BLL();
+        string IdPersona;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            IdPersona = Request.QueryString["IdPersona"];
+            
         }
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
             obj_test.lstRespuestas = new string[36];
+
+            obj_test.lstRespuestas[0] = IdPersona;
 
             if (respuestaSi1.Checked == true)
             {
