@@ -44,5 +44,10 @@ namespace WEB_ADOTEC.Paginas
                 tbl_N_ElecIndust.InnerText = dtInformacionEstudiante.Rows[0]["CTPA_05"].ToString();
             }
         }
+
+        protected void btn_Genera_Reporte_Click(object sender, EventArgs e)
+        {
+            objBLL.GenerarExcel();
+        }
     }
 }

@@ -42,6 +42,8 @@ namespace BLL.Serv_ADOTEC {
         
         private System.Threading.SendOrPostCallback Filtrar_EstudianteOperationCompleted;
         
+        private System.Threading.SendOrPostCallback Genera_ReporteOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -97,6 +99,9 @@ namespace BLL.Serv_ADOTEC {
         
         /// <remarks/>
         public event Filtrar_EstudianteCompletedEventHandler Filtrar_EstudianteCompleted;
+        
+        /// <remarks/>
+        public event Genera_ReporteCompletedEventHandler Genera_ReporteCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/Metodo_Prueba", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -279,6 +284,34 @@ namespace BLL.Serv_ADOTEC {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/Genera_Reporte", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Data.DataTable Genera_Reporte() {
+            object[] results = this.Invoke("Genera_Reporte", new object[0]);
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void Genera_ReporteAsync() {
+            this.Genera_ReporteAsync(null);
+        }
+        
+        /// <remarks/>
+        public void Genera_ReporteAsync(object userState) {
+            if ((this.Genera_ReporteOperationCompleted == null)) {
+                this.Genera_ReporteOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGenera_ReporteOperationCompleted);
+            }
+            this.InvokeAsync("Genera_Reporte", new object[0], this.Genera_ReporteOperationCompleted, userState);
+        }
+        
+        private void OnGenera_ReporteOperationCompleted(object arg) {
+            if ((this.Genera_ReporteCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.Genera_ReporteCompleted(this, new Genera_ReporteCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -396,6 +429,32 @@ namespace BLL.Serv_ADOTEC {
         private object[] results;
         
         internal Filtrar_EstudianteCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void Genera_ReporteCompletedEventHandler(object sender, Genera_ReporteCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class Genera_ReporteCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal Genera_ReporteCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

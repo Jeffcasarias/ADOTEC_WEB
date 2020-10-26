@@ -89,7 +89,7 @@
         </div>
     </div>
     <div style="text-align: center;">
-        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Generar reporte completo</label></div><button class="btn btn-success" type="submit" style="margin-top: 15px;">Excel</button></div>
+        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Generar reporte completo</label></div><asp:button ID="btn_Genera_Reporte" runat="server" class="btn btn-success" type="submit" style="margin-top: 15px;" Text="Excel" OnClick="btn_Genera_Reporte_Click"/></div>
     <div
         class="footer-basic">
         <footer>

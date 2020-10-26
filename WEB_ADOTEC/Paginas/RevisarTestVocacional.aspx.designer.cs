@@ -184,5 +184,14 @@ namespace WEB_ADOTEC.Paginas
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell tbl_E_ProdCal;
+
+        /// <summary>
+        /// btn_Genera_Reporte control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Genera_Reporte;
     }
 }
