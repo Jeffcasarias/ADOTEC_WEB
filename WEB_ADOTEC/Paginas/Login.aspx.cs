@@ -25,15 +25,25 @@ namespace WEB_ADOTEC.Paginas
 
         protected void btn_Ingreso_Click(object sender, EventArgs e)
         {
+
             Respuesta = obj_Login.ValidarUsuario(txtUsuario.Text, txtContrasena.Text);
             if (Respuesta == null)
             {
-                lbl_Respuesta.Text = string.Empty;
-                Response.Redirect("testVocacional.aspx?IdPersona=" + txtUsuario.Text);
+                lbl_Respuesta.Text = "Usuario o contraseña inválido";
             }
             else
             {
-                lbl_Respuesta.Text = Respuesta;
+                if(Respuesta == "A")
+                {
+                    Response.Redirect("RevisarTestVocacional.aspx");
+                }
+                else if (Respuesta == "E")
+                {
+                    Response.Redirect("testVocacional.aspx?IdPersona=" + txtUsuario.Text);
+                }
+                lbl_Respuesta.Text = string.Empty;
+                
+                
             }
         }
     }

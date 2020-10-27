@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BLL.Serv_ADOTEC;
+using System.Data;
 
 namespace BLL
 {
@@ -13,9 +14,17 @@ namespace BLL
 
         public string ValidarUsuario(string Usuario, string Contrasena)
         {
-            string respuesta;
-            respuesta = obj_servADOTEC.Validar_Usuario(Usuario, Contrasena);
+            DataTable dt = new DataTable();
+            string respuesta = null;
+            dt = obj_servADOTEC.Validar_Usuario(Usuario, Contrasena);
+
+            if (dt.Rows.Count != 0)
+            {
+                respuesta = dt.Rows[0]["IDROL"].ToString();
+            }
+
             return respuesta;
+            
         }
         
     }

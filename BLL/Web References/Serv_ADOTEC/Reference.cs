@@ -36,8 +36,6 @@ namespace BLL.Serv_ADOTEC {
         
         private System.Threading.SendOrPostCallback Recuperar_ContrasenaOperationCompleted;
         
-        private System.Threading.SendOrPostCallback GeneraExcelOperationCompleted;
-        
         private System.Threading.SendOrPostCallback RespuestasTestOperationCompleted;
         
         private System.Threading.SendOrPostCallback Filtrar_EstudianteOperationCompleted;
@@ -92,9 +90,6 @@ namespace BLL.Serv_ADOTEC {
         public event Recuperar_ContrasenaCompletedEventHandler Recuperar_ContrasenaCompleted;
         
         /// <remarks/>
-        public event GeneraExcelCompletedEventHandler GeneraExcelCompleted;
-        
-        /// <remarks/>
         public event RespuestasTestCompletedEventHandler RespuestasTestCompleted;
         
         /// <remarks/>
@@ -136,11 +131,11 @@ namespace BLL.Serv_ADOTEC {
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/Validar_Usuario", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Validar_Usuario([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string Usuario, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string Contrasena) {
+        public System.Data.DataTable Validar_Usuario([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string Usuario, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string Contrasena) {
             object[] results = this.Invoke("Validar_Usuario", new object[] {
                         Usuario,
                         Contrasena});
-            return ((string)(results[0]));
+            return ((System.Data.DataTable)(results[0]));
         }
         
         /// <remarks/>
@@ -192,34 +187,6 @@ namespace BLL.Serv_ADOTEC {
             if ((this.Recuperar_ContrasenaCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.Recuperar_ContrasenaCompleted(this, new Recuperar_ContrasenaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/GeneraExcel", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void GeneraExcel([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string NombreArchivo) {
-            this.Invoke("GeneraExcel", new object[] {
-                        NombreArchivo});
-        }
-        
-        /// <remarks/>
-        public void GeneraExcelAsync(string NombreArchivo) {
-            this.GeneraExcelAsync(NombreArchivo, null);
-        }
-        
-        /// <remarks/>
-        public void GeneraExcelAsync(string NombreArchivo, object userState) {
-            if ((this.GeneraExcelOperationCompleted == null)) {
-                this.GeneraExcelOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGeneraExcelOperationCompleted);
-            }
-            this.InvokeAsync("GeneraExcel", new object[] {
-                        NombreArchivo}, this.GeneraExcelOperationCompleted, userState);
-        }
-        
-        private void OnGeneraExcelOperationCompleted(object arg) {
-            if ((this.GeneraExcelCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.GeneraExcelCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -374,10 +341,10 @@ namespace BLL.Serv_ADOTEC {
         }
         
         /// <remarks/>
-        public string Result {
+        public System.Data.DataTable Result {
             get {
                 this.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
+                return ((System.Data.DataTable)(this.results[0]));
             }
         }
     }
@@ -407,10 +374,6 @@ namespace BLL.Serv_ADOTEC {
             }
         }
     }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
-    public delegate void GeneraExcelCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]

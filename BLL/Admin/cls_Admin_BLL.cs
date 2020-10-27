@@ -19,8 +19,6 @@ namespace BLL.Admin
             return obj_servADOTEC.Filtrar_Estudiante(iIdEstudiante, true);
         }
 
-       
-
         public void GenerarExcel()
         {
             DataTable DT = new DataTable();
