@@ -74,7 +74,7 @@
         </div>
         <div class="form-group">
             <p class="text-center">Por favor ingrese a las opciones para realizar las pruebas</p>
-            <div><button class="btn btn-primary"  onserverclick="BtnVocacional" runat="server" type="button">Test Vocacional</button><button class="btn btn-primary" type="button" style="margin-left: 30px;">Test Aptitud</button></div>
+            <div><button class="btn btn-primary"  onserverclick="BtnVocacional" runat="server" type="button">Test Vocacional</button><button class="btn btn-primary" onserverclick="Btn404" runat="server" type="button"  style="margin-left: 30px;">Test Aptitud</button></div>
         </div>
     </div>
     <div class="footer-basic">

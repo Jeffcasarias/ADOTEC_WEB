@@ -46,5 +46,9 @@ namespace WEB_ADOTEC.Paginas
         {
             Response.Redirect("testVocacional.aspx");
         }
+        protected void Btn404(object sender, EventArgs e)
+        {
+            Response.Redirect("404.aspx");
+        }
     }
 }

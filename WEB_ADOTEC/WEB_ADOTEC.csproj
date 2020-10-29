@@ -72,6 +72,7 @@
     <Content Include="fonts\ionicons.min.css" />
     <Content Include="fonts\ionicons.svg" />
     <Content Include="Hoja_estilos\-Login-form-Page-BS4-.css" />
+    <Content Include="Hoja_estilos\404.css" />
     <Content Include="Hoja_estilos\Article-Clean.css" />
     <Content Include="Hoja_estilos\Competences-Grid---3-Columns---Hover-Effect-Float-Up.css" />
     <Content Include="Hoja_estilos\Footer-Basic.css" />
@@ -95,6 +96,7 @@
     <Content Include="Imagenes\minibus.jpeg" />
     <Content Include="Imagenes\ProducCalidad.PNG" />
     <Content Include="Imagenes\Redes.PNG" />
+    <Content Include="Paginas\404.aspx" />
     <Content Include="Paginas\AdminLogisDistri.aspx" />
     <Content Include="Paginas\ContabilidadCostos.aspx" />
     <Content Include="Paginas\EjecuCentroServi.aspx" />
@@ -108,12 +110,20 @@
     <Content Include="Paginas\RevisarAptitud.aspx" />
     <Content Include="Paginas\RevisarTestVocacional.aspx" />
     <Content Include="Paginas\testVocacional.aspx" />
+    <Content Include="Scripts\404.js" />
     <Content Include="Scripts\bs-init.js" />
     <Content Include="Scripts\DestroySession.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\AdminLogisDistri.aspx.cs">
       <DependentUpon>AdminLogisDistri.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
