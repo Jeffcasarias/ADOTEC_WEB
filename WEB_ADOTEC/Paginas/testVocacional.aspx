@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-    <title>LoginCTP</title>
+    <title>Test Vocacional</title>
     <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor"/>
     <link rel="stylesheet" href="../Hoja_estilos/-Login-form-Page-BS4-.css"/>
@@ -26,11 +26,6 @@
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="background-color: #ffffff;">Ofertas Técnicas</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Informática Empresarial</a><a class="dropdown-item" role="presentation" href="#">Informática en Redes<br></a><a class="dropdown-item" role="presentation" href="#">Contabilidad y Costos</a>
-                            <a
-                                class="dropdown-item" role="presentation" href="#">Ejecutivos para Centros de Servicios</a><a class="dropdown-item" role="presentation" href="#">Administración, Lógica y Distribución</a><a class="dropdown-item" role="presentation" href="#">Productividad y Calidad</a></div>
-                    </li>
                 </ul><asp:Button ID="btnSalir" runat="server" Text="Salir" class="btn btn-primary"/></div>
            
         </div>

@@ -81,6 +81,7 @@
     <Content Include="Hoja_estilos\Projects-Clean.css" />
     <Content Include="Hoja_estilos\styles.css" />
     <Content Include="Imagenes\AdminLogisYDistri.PNG" />
+    <Content Include="Imagenes\beach.jpg" />
     <Content Include="Imagenes\building.jpg" />
     <Content Include="Imagenes\Colegio.jpg" />
     <Content Include="Imagenes\Contabilidad.PNG" />
@@ -94,8 +95,16 @@
     <Content Include="Imagenes\minibus.jpeg" />
     <Content Include="Imagenes\ProducCalidad.PNG" />
     <Content Include="Imagenes\Redes.PNG" />
-    <Content Include="Paginas\Index.html" />
+    <Content Include="Paginas\AdminLogisDistri.aspx" />
+    <Content Include="Paginas\ContabilidadCostos.aspx" />
+    <Content Include="Paginas\EjecuCentroServi.aspx" />
+    <Content Include="Paginas\ElectroIndustrial.aspx" />
+    <Content Include="Paginas\Index.aspx" />
+    <Content Include="Paginas\InforEmpresarial.aspx" />
+    <Content Include="Paginas\InforRedes.aspx" />
     <Content Include="Paginas\Login.aspx" />
+    <Content Include="Paginas\ProduCali.aspx" />
+    <Content Include="Paginas\RegistroUsuario.aspx" />
     <Content Include="Paginas\RevisarAptitud.aspx" />
     <Content Include="Paginas\RevisarTestVocacional.aspx" />
     <Content Include="Paginas\testVocacional.aspx" />
@@ -105,12 +114,75 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\AdminLogisDistri.aspx.cs">
+      <DependentUpon>AdminLogisDistri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AdminLogisDistri.aspx.designer.cs">
+      <DependentUpon>AdminLogisDistri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ContabilidadCostos.aspx.cs">
+      <DependentUpon>ContabilidadCostos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ContabilidadCostos.aspx.designer.cs">
+      <DependentUpon>ContabilidadCostos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\EjecuCentroServi.aspx.cs">
+      <DependentUpon>EjecuCentroServi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\EjecuCentroServi.aspx.designer.cs">
+      <DependentUpon>EjecuCentroServi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ElectroIndustrial.aspx.cs">
+      <DependentUpon>ElectroIndustrial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ElectroIndustrial.aspx.designer.cs">
+      <DependentUpon>ElectroIndustrial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\InforEmpresarial.aspx.cs">
+      <DependentUpon>InforEmpresarial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\InforEmpresarial.aspx.designer.cs">
+      <DependentUpon>InforEmpresarial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\InforRedes.aspx.cs">
+      <DependentUpon>InforRedes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\InforRedes.aspx.designer.cs">
+      <DependentUpon>InforRedes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Paginas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ProduCali.aspx.cs">
+      <DependentUpon>ProduCali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ProduCali.aspx.designer.cs">
+      <DependentUpon>ProduCali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegistroUsuario.aspx.designer.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\RevisarAptitud.aspx.cs">
       <DependentUpon>RevisarAptitud.aspx</DependentUpon>

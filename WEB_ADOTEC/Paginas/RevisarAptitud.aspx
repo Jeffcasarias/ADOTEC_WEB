@@ -27,7 +27,7 @@
 <body>
     <form id="form1" runat="server">
         <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: rgb(156,156,156);filter: blur(0px);">
-        <div class="container"><img src="assets/img/Logo.png" style="width: 50px;"><a class="navbar-brand text-white" style="font-family: Actor, sans-serif;margin-left: 0px;"><strong>CTP ALAJUELITA</strong><br></a><button class="btn btn-primary text-light border-light shadow-none"
+        <div class="container"><img src="../Imagenes/Logo.png" style="width: 50px;"><a class="navbar-brand text-white" style="font-family: Actor, sans-serif;margin-left: 0px;"><strong>CTP ALAJUELITA</strong><br></a><button class="btn btn-primary text-light border-light shadow-none"
                 data-bs-hover-animate="bounce" type="submit" style="background: rgb(177,184,191);margin-left: 0px;border-radius: 20px;font-family: Adamina, serif;">Salir</button></div>
     </nav>
     <h1 class="display-4 text-center border-success shadow-sm" style="font-family: Alike, serif;font-size: 40px;margin-top: 20px;opacity: 0.77;filter: blur(0px) contrast(132%) grayscale(0%) hue-rotate(0deg) invert(11%) saturate(27%) sepia(2%);">Revisión <strong>de </strong>Test de Aptitudes CTP Alajuelita</h1>
