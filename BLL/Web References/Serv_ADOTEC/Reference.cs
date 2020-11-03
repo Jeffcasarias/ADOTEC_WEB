@@ -42,6 +42,8 @@ namespace BLL.Serv_ADOTEC {
         
         private System.Threading.SendOrPostCallback Genera_ReporteOperationCompleted;
         
+        private System.Threading.SendOrPostCallback InsertarPersonaOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -97,6 +99,9 @@ namespace BLL.Serv_ADOTEC {
         
         /// <remarks/>
         public event Genera_ReporteCompletedEventHandler Genera_ReporteCompleted;
+        
+        /// <remarks/>
+        public event InsertarPersonaCompletedEventHandler InsertarPersonaCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/Metodo_Prueba", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -279,6 +284,50 @@ namespace BLL.Serv_ADOTEC {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService_ADOTEC/InsertarPersona", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void InsertarPersona(int IdPersona, [System.Xml.Serialization.XmlIgnoreAttribute()] bool IdPersonaSpecified, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string Nombre, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string Ap1, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string Ap2, System.DateTime FechaNacimiento, [System.Xml.Serialization.XmlIgnoreAttribute()] bool FechaNacimientoSpecified, int Rol, [System.Xml.Serialization.XmlIgnoreAttribute()] bool RolSpecified) {
+            this.Invoke("InsertarPersona", new object[] {
+                        IdPersona,
+                        IdPersonaSpecified,
+                        Nombre,
+                        Ap1,
+                        Ap2,
+                        FechaNacimiento,
+                        FechaNacimientoSpecified,
+                        Rol,
+                        RolSpecified});
+        }
+        
+        /// <remarks/>
+        public void InsertarPersonaAsync(int IdPersona, bool IdPersonaSpecified, string Nombre, string Ap1, string Ap2, System.DateTime FechaNacimiento, bool FechaNacimientoSpecified, int Rol, bool RolSpecified) {
+            this.InsertarPersonaAsync(IdPersona, IdPersonaSpecified, Nombre, Ap1, Ap2, FechaNacimiento, FechaNacimientoSpecified, Rol, RolSpecified, null);
+        }
+        
+        /// <remarks/>
+        public void InsertarPersonaAsync(int IdPersona, bool IdPersonaSpecified, string Nombre, string Ap1, string Ap2, System.DateTime FechaNacimiento, bool FechaNacimientoSpecified, int Rol, bool RolSpecified, object userState) {
+            if ((this.InsertarPersonaOperationCompleted == null)) {
+                this.InsertarPersonaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertarPersonaOperationCompleted);
+            }
+            this.InvokeAsync("InsertarPersona", new object[] {
+                        IdPersona,
+                        IdPersonaSpecified,
+                        Nombre,
+                        Ap1,
+                        Ap2,
+                        FechaNacimiento,
+                        FechaNacimientoSpecified,
+                        Rol,
+                        RolSpecified}, this.InsertarPersonaOperationCompleted, userState);
+        }
+        
+        private void OnInsertarPersonaOperationCompleted(object arg) {
+            if ((this.InsertarPersonaCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InsertarPersonaCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -430,6 +479,10 @@ namespace BLL.Serv_ADOTEC {
             }
         }
     }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void InsertarPersonaCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
 }
 
 #pragma warning restore 1591

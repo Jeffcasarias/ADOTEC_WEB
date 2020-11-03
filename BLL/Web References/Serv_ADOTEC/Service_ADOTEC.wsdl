@@ -44,6 +44,12 @@
   <wsdl:message name="IService_ADOTEC_Genera_Reporte_OutputMessage">
     <wsdl:part name="parameters" element="tns:Genera_ReporteResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_ADOTEC_InsertarPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarPersona" />
+  </wsdl:message>
+  <wsdl:message name="IService_ADOTEC_InsertarPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarPersonaResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService_ADOTEC">
     <wsdl:operation name="Metodo_Prueba">
       <wsdl:input wsaw:Action="http://tempuri.org/IService_ADOTEC/Metodo_Prueba" message="tns:IService_ADOTEC_Metodo_Prueba_InputMessage" />
@@ -68,6 +74,10 @@
     <wsdl:operation name="Genera_Reporte">
       <wsdl:input wsaw:Action="http://tempuri.org/IService_ADOTEC/Genera_Reporte" message="tns:IService_ADOTEC_Genera_Reporte_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService_ADOTEC/Genera_ReporteResponse" message="tns:IService_ADOTEC_Genera_Reporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarPersona">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService_ADOTEC/InsertarPersona" message="tns:IService_ADOTEC_InsertarPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService_ADOTEC/InsertarPersonaResponse" message="tns:IService_ADOTEC_InsertarPersona_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService_ADOTEC" type="tns:IService_ADOTEC">
@@ -119,6 +129,15 @@
     </wsdl:operation>
     <wsdl:operation name="Genera_Reporte">
       <soap:operation soapAction="http://tempuri.org/IService_ADOTEC/Genera_Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarPersona">
+      <soap:operation soapAction="http://tempuri.org/IService_ADOTEC/InsertarPersona" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
