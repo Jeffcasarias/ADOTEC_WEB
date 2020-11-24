@@ -32,42 +32,43 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Feria Vocacional Virtual</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <p class="text-center">Nuestras Ofertas Académicas </p>
             </div>
             <div class="row projects">
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="../Imagenes/InformaticaEm.PNG" style="background-image: url(&quot;assets/img/InformaticaEm.PNG&quot;);">
                     <h3 class="name">Informática Empresarial</h3><button onserverclick="BtnEmpre" runat="server" class="btn btn-primary" type="button">Más información</button>
-                    <p class="description" style="margin-bottom: 5px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description" style="margin-bottom: 5px;">Aplica sistemas de mantenimiento preventivo y correctivo en equipo, maquinaria y herramienta, propias de la especialidad.</p>
                     <div class="btn-group" role="group"></div>
                 </div>
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="../Imagenes/Redes.PNG">
                     <h3 class="name">Informática en Redes</h3><button class="btn btn-primary" onserverclick="BtnRedes" runat="server" type="button" style="margin-top: 4.5px;">Más información</button>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description">Interpreta proyectos arquitectónicos y representaciones de redes de acuerdo con los diferentes elementos que lo componen.
+</p>
                     <div class="btn-group" role="group" style="margin-right: 150px;"></div>
                 </div>
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="../Imagenes/Contabilidad.PNG">
                     <h3 class="name">Contabilidad y Costos</h3><button class="btn btn-primary" onserverclick="BtnConta" runat="server" type="button">Más información</button>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description">Analiza los diferentes costos en la administración de los inventarios, así como los métodos usados en la rotación y valuación.</p>
                     <div class="btn-group" role="group"></div>
                 </div>
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="../Imagenes/ejeCentroServicios.PNG">
                     <h3 class="name">Ejecutivo para Centros de Servicios<br></h3><button class="btn btn-primary" onserverclick="BtnEjecuCe" runat="server" type="button">Más información</button>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description">Aplica las normas de Salud Ocupacional al realizar las labores propias de la especialidad, previniendo accidentes y enfermedades laborales en beneficio de la salud física y mental, en el nivel personal y grupal.</p>
                     <div class="btn-group" role="group"></div>
                 </div>
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="../Imagenes/ElectroIndustrial.PNG">
                     <h3 class="name">Electrónica Industrial<br></h3><button class="btn btn-primary" onserverclick="BtnElectroIndus" runat="server" type="button" style="margin-top: 30px;">Más información</button>
-                    <p class="description" style="margin-bottom: 26px;">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description" style="margin-bottom: 26px;">Resolver problemas lógico-matemáticos, empleando técnicas de programación estructuradas y el lenguaje de programación C++.</p>
                     <div class="btn-group" role="group"></div>
                 </div>
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="../Imagenes/AdminLogisYDistri.PNG">
                     <h3 class="name">Administración, Logistica y Distribución<br></h3><button class="btn btn-primary" onserverclick="BtnAdminLogis" runat="server" type="button">Más información</button>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description">Ejecuta sistemas de investigación que fortalezcan el desarrollo, la producción, así como la disponibilidad del servicio.</p>
                     <div class="btn-group" role="group"></div>
                 </div>
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid" src="../Imagenes/ProducCalidad.PNG">
                     <h3 class="name">Productividad y Calidad<br></h3><button class="btn btn-primary" onserverclick="BtnProduc" runat="server" type="button">Más información</button>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description">Aplica las técnicas básicas de trabajo en equipo, con el fin de mejorar los procesos internos de las empresas.</p>
                     <div class="btn-group" role="group"></div>
                 </div>
             </div>

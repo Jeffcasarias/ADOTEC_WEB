@@ -81,27 +81,37 @@
     <Content Include="Hoja_estilos\Navigation-with-Search.css" />
     <Content Include="Hoja_estilos\Projects-Clean.css" />
     <Content Include="Hoja_estilos\styles.css" />
+    <Content Include="Imagenes\ECS.jpg" />
     <Content Include="Imagenes\AdminLogisYDistri.PNG" />
     <Content Include="Imagenes\beach.jpg" />
     <Content Include="Imagenes\building.jpg" />
     <Content Include="Imagenes\Colegio.jpg" />
     <Content Include="Imagenes\Contabilidad.PNG" />
+    <Content Include="Imagenes\ContabilidadCostos.jpg" />
     <Content Include="Imagenes\default.jpg" />
     <Content Include="Imagenes\desk.jpg" />
     <Content Include="Imagenes\ejeCentroServicios.PNG" />
     <Content Include="Imagenes\ElectroIndustrial.PNG" />
+    <Content Include="Imagenes\Electrónica-Industrial.jpg" />
+    <Content Include="Imagenes\Estudiante.jpg" />
+    <Content Include="Imagenes\Info-empresarial.jpg" />
     <Content Include="Imagenes\InformaticaEm.PNG" />
     <Content Include="Imagenes\loft.jpg" />
+    <Content Include="Imagenes\LogisticayDistri.jpg" />
     <Content Include="Imagenes\Logo.png" />
     <Content Include="Imagenes\minibus.jpeg" />
     <Content Include="Imagenes\ProducCalidad.PNG" />
+    <Content Include="Imagenes\Productividad-Cali.jpg" />
+    <Content Include="Imagenes\Redes-1.jpg" />
     <Content Include="Imagenes\Redes.PNG" />
+    <Content Include="Imagenes\Revisando.jpg" />
     <Content Include="Paginas\404.aspx" />
     <Content Include="Paginas\AdminLogisDistri.aspx" />
     <Content Include="Paginas\ContabilidadCostos.aspx" />
     <Content Include="Paginas\EjecuCentroServi.aspx" />
     <Content Include="Paginas\ElectroIndustrial.aspx" />
     <Content Include="Paginas\Index.aspx" />
+    <Content Include="Paginas\Index_Profesor.aspx" />
     <Content Include="Paginas\InforEmpresarial.aspx" />
     <Content Include="Paginas\InforRedes.aspx" />
     <Content Include="Paginas\Login.aspx" />
@@ -158,6 +168,13 @@
     </Compile>
     <Compile Include="Paginas\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Index_Profesor.aspx.cs">
+      <DependentUpon>Index_Profesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Index_Profesor.aspx.designer.cs">
+      <DependentUpon>Index_Profesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\InforEmpresarial.aspx.cs">
       <DependentUpon>InforEmpresarial.aspx</DependentUpon>

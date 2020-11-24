@@ -34,7 +34,7 @@
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
                     <div class="intro">
                         <h1 class="text-center" style="border-bottom-style: solid;border-bottom-color: rgb(239,241,244);">Contabilidad y Costos</h1>
-                        <p class="text-center"> </p><img class="img-fluid" src="../Imagenes/desk.jpg" style="margin-left: 50px;"></div>
+                        <p class="text-center"> </p><img class="img-fluid" src="../Imagenes/ContabilidadCostos.jpg" style="margin-left: 50px;"></div>
                     <h3 style="border-bottom-style: solid;border-bottom-color: rgb(239,241,244);">Perfil Profesional</h3>
                     <div class="text">
                         <p></p>
