@@ -9,9 +9,11 @@ namespace WEB_ADOTEC.Paginas
 {
     public partial class Index : System.Web.UI.Page
     {
+        string IdPersona;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            IdPersona = Request.QueryString["IdPersona"];
         }
 
         protected void BtnEmpre(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace WEB_ADOTEC.Paginas
         }
         protected void BtnVocacional(object sender, EventArgs e)
         {
-            Response.Redirect("testVocacional.aspx");
+            Response.Redirect("testVocacional.aspx?IdPersona=" + IdPersona);
         }
         protected void Btn404(object sender, EventArgs e)
         {

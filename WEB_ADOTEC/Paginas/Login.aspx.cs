@@ -35,11 +35,11 @@ namespace WEB_ADOTEC.Paginas
             {
                 if(Respuesta == "A")
                 {
-                    Response.Redirect("RevisarTestVocacional.aspx");
+                    Response.Redirect("Index_Profesor.aspx");
                 }
                 else if (Respuesta == "E")
                 {
-                    Response.Redirect("testVocacional.aspx?IdPersona=" + txtUsuario.Text);
+                    Response.Redirect("Index.aspx");
                 }
                 lbl_Respuesta.Text = string.Empty;
                 
