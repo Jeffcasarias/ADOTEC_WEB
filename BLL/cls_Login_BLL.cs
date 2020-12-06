@@ -20,7 +20,7 @@ namespace BLL
 
             if (dt.Rows.Count != 0)
             {
-                respuesta = dt.Rows[0]["IDROL"].ToString();
+                respuesta = dt.Rows[0]["ROL"].ToString();
             }
 
             return respuesta;
